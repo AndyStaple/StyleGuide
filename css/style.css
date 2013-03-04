@@ -537,10 +537,7 @@ img {
     margin: 0; }
 
 section {
-  background: #ffffff;
-  -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.3);
-  -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.3);
-  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.3); }
+  background: #ffffff; }
 
 a.button {
   border: 1px solid #bdbdbd;
