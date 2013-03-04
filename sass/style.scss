@@ -1,0 +1,139 @@
+@import "_normalize";
+@import "../bourbon/bourbon";
+@import "_grid-settings";
+@import "../neat/neat";
+
+// Import Basic Structure & Grid
+@import "_layout";
+@import "_typography";
+
+// Colors
+$primaryColor: #d16144;
+$secondaryColor: #303030;
+$tertiaryColor: #e1e1e1;
+
+body { 
+	background: #f1f1f1;
+	color: lighten( $secondaryColor, 20% );
+	line-height: $line-height;
+}
+img { border: 0; max-width: 100%; }
+.colors div {
+}
+
+.container-full {
+	max-width: 100%;
+	background: $secondaryColor;
+	h1 { margin: 0; }
+	@include pad();
+	color: $primaryColor;
+}
+section {
+	background: #ffffff;
+	-webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.3);
+	box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.3);
+}
+
+// --------------------------------
+// Button & Form Styling ----------
+// --------------------------------
+a.button {
+	@include button($tertiaryColor);
+	margin: .25em 0;
+}
+a.button.primary {
+	@include button($primaryColor);
+}
+a.button.secondary {
+	@include button($secondaryColor);
+}
+a.button.success {
+	@include button(green);
+}
+a.button.alert {
+	@include button(red);
+}
+
+#{$all-text-inputs} {
+  background-color: white;
+  font-family: inherit;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 0.875em;
+  margin: 0 0 1em 0;
+  padding: 0.5em;
+  height: 2.3125em;
+  width: 100%;
+  border-radius: 3px;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+#{$all-text-inputs-hover} { // Target the :hover pseudo-class
+  background: yellow;
+}
+
+#{$all-text-inputs-focus} { // Target the :focus pseudo-class
+  background: white;
+}
+
+
+
+.one-third {
+	text-align: center;
+	h4 { border-bottom: 1px solid darken( $tertiaryColor, 10% ) }
+	&.first {
+		background: $secondaryColor;
+	}
+	&.middle {
+		background: #ffffff;;
+	}
+	&.last {
+		background: $tertiaryColor;
+		text-align: left; 
+	}
+	dt {
+		color: darken( $tertiaryColor, 10% );
+	}
+	dd {
+		margin-left: 1em;
+		margin-bottom: 1em;
+	}
+}
+
+.color-container {
+	@include pad(0);
+	li {
+		font-size: $font-size / 2;
+	}
+}
+
+.primary { 
+	background: $primaryColor; 
+	&.dark1 { background: darken( $primaryColor, 10% ) }
+	&.dark2 { background: darken( $primaryColor, 5% ) }
+	&.light1 { background: lighten( $primaryColor, 5% ) }
+	&.light2 { background: lighten( $primaryColor, 10% ) }
+	color: lighten( $primaryColor, 20% )
+}
+.secondary { 
+	background: $secondaryColor; 
+	&.dark1 { background: darken( $secondaryColor, 10% ) }
+	&.dark2 { background: darken( $secondaryColor, 5% ) }
+	&.light1 { background: lighten( $secondaryColor, 5% ) }
+	&.light2 { background: lighten( $secondaryColor, 10% ) }
+	color: lighten( $secondaryColor, 20% )
+}
+.tertiary { 
+	background: $tertiaryColor; 
+	&.dark1 { background: darken( $tertiaryColor, 10% ) }
+	&.dark2 { background: darken( $tertiaryColor, 5% ) }
+	&.light1 { background: lighten( $tertiaryColor, 5% ) }
+	&.light2 { background: lighten( $tertiaryColor, 10% ) }
+	color: darken( $tertiaryColor, 20% )
+}
