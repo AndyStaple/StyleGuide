@@ -5,6 +5,9 @@ This is my Style Guide (many people enjoy the term Style Tile, thats the hip nam
 
 A Style Guide is a great way to document how a website is to be structured and the consistency of visual elements on the screen (and potentially off-screen too). It offers a simple style that anyone can follow when creating for the website. It can also be used as a deliverable in place of a static image mockup or other types of comps. This is in many ways better because it shows a web design in its native enviornment&mdash;the web.
 
+For the time being, here is a link to a screenshot of the style guide:
+[Example Screenshot](http://www.staplewebdesign.com/img/styleguide-example.png)
+
 
 Dependancies
 ------------------
