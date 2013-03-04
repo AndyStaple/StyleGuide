@@ -7,11 +7,6 @@
 @import "_layout";
 @import "_typography";
 
-// Colors
-$primaryColor: #d16144;
-$secondaryColor: #303030;
-$tertiaryColor: #e1e1e1;
-
 body { 
 	background: #f1f1f1;
 	color: lighten( $secondaryColor, 20% );
@@ -104,6 +99,16 @@ a.button.alert {
 		margin-left: 1em;
 		margin-bottom: 1em;
 	}
+}
+
+.deck {
+	font-size: 1.2em;
+	line-height: 1.8em;
+}
+blockquote {
+	border-left: 1px solid lighten( $primaryColor, 20% );
+	margin-left: 0;
+	padding-left: 2em;
 }
 
 .color-container {

@@ -186,6 +186,62 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  font-family: "Enzo OT", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+  font-size: 16 em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Idlewild, sans-serif;
+  font-weight: 400;
+  line-height: 1.6em;
+  margin-top: 1.33em;
+  margin-bottom: 0.2em; }
+
+h1 {
+  font-size: 1.8em;
+  margin-top: 0.5em; }
+
+h2 {
+  font-size: 1.2em; }
+
+h3 {
+  font-size: 1.0em; }
+
+h4 {
+  font-size: 1.0em; }
+
+h5 {
+  font-size: 1.0em;
+  font-family: "Enzo OT", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.18em; }
+
+h6 {
+  font-size: 0.9em;
+  font-family: "Enzo OT", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.18em; }
+
+.header-text {
+  font-family: Idlewild, sans-serif; }
+
+.body-text {
+  font-family: "Enzo OT", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif; }
+
+.small-header-text {
+  font-family: "Enzo OT", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .2em; }
+
+.deck {
+  font-size: 1.2em;
+  line-height: 1.8em; }
+
+blockquote {
+  border-left: 1px solid #e5a696;
+  margin-left: 0;
+  padding-left: 2em; }
+
 .container {
   *zoom: 1;
   max-width: 2000px;
@@ -251,7 +307,7 @@ table {
           margin-right: 1.79116%;
           width: 100%;
           padding: 0.70885%;
-          height: 8em;
+          height: 4em;
           text-align: center;
           margin-right: 0; }
           .table-outer-container .table-inner-container ul.color-container li.color-block:last-child {
@@ -263,7 +319,7 @@ table {
     display: block;
     float: left;
     margin-right: 1.79116%;
-    width: 83.03481%;
+    width: 100%;
     padding: 1.5em; }
     .article-example:last-child {
       margin-right: 0; }
@@ -272,7 +328,7 @@ table {
     display: block;
     float: left;
     margin-right: 1.79116%;
-    width: 83.03481%;
+    width: 100%;
     padding: 1em;
     text-align: center; }
     .buttons:last-child {
@@ -349,7 +405,7 @@ table {
     display: block;
     float: left;
     margin-right: 1.06705%;
-    width: 49.46647%;
+    width: 59.57318%;
     padding: 1.5em; }
     .article-example:last-child {
       margin-right: 0; }
@@ -358,7 +414,7 @@ table {
     display: block;
     float: left;
     margin-right: 1.06705%;
-    width: 49.46647%;
+    width: 39.35977%;
     padding: 1em;
     text-align: center; }
     .buttons:last-child {
@@ -462,57 +518,6 @@ li.color-block {
     margin-right: 0; }
   li.color-block:nth-child(3n) {
     margin-right: 0; }
-
-body {
-  font-family: "Enzo OT", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-  font-size: 16 em; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: Idlewild, sans-serif;
-  font-weight: 400;
-  line-height: 1.6em;
-  margin-top: 1.33em;
-  margin-bottom: 0.2em; }
-
-h1 {
-  font-size: 1.8em;
-  margin-top: 0.5em; }
-
-h2 {
-  font-size: 1.2em; }
-
-h3 {
-  font-size: 1.0em; }
-
-h4 {
-  font-size: 1.0em; }
-
-h5 {
-  font-size: 1.0em;
-  font-family: "Enzo OT", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.18em; }
-
-h6 {
-  font-size: 0.9em;
-  font-family: "Enzo OT", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.18em; }
-
-.header-text {
-  font-family: Idlewild, sans-serif; }
-
-.body-text {
-  font-family: "Enzo OT", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif; }
-
-.small-header-text {
-  font-family: "Enzo OT", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: .2em; }
-
-.deck {
-  font-size: 1.2em;
-  line-height: 1.8em; }
 
 body {
   background: #f1f1f1;
@@ -758,6 +763,15 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
   .one-third dd {
     margin-left: 1em;
     margin-bottom: 1em; }
+
+.deck {
+  font-size: 1.2em;
+  line-height: 1.8em; }
+
+blockquote {
+  border-left: 1px solid #e5a696;
+  margin-left: 0;
+  padding-left: 2em; }
 
 .color-container {
   padding: 0; }
