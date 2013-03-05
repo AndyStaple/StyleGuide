@@ -6,7 +6,7 @@ A Style Guide is a great way to document how a website is to be structured and t
 
 
 #### Example
-[Example Screenshot](http://www.staplewebdesign.com/img/styleguide-example.png)
+[View My Style-Guide](http://www.staplewebdesign.com/styleguide/)
 
 
 ## Dependancies
