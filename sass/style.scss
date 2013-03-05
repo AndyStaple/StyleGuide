@@ -5,7 +5,8 @@
 
 // Import Basic Structure & Grid
 @import "_layout";
-@import "_typography";
+
+// @import "icon-font/_font-style.scss"; // Icon Font
 
 body { 
 	background: #f1f1f1;
@@ -22,9 +23,6 @@ img { border: 0; max-width: 100%; }
 	h1 { margin: 0; }
 	@include pad();
 	color: $primaryColor;
-}
-section {
-	background: #ffffff;
 }
 
 // --------------------------------
@@ -83,14 +81,16 @@ a.button.alert {
 		background: $secondaryColor;
 	}
 	&.middle {
-		background: #ffffff;;
+		background: #ffffff;
+		p {
+			i {
+				font-size: 1.5em;
+			}
+		}
 	}
 	&.last {
 		background: $tertiaryColor;
 		text-align: left; 
-	}
-	dt {
-		color: darken( $tertiaryColor, 10% );
 	}
 	dd {
 		margin-left: 1em;
@@ -139,3 +139,32 @@ blockquote {
 	&.light2 { background: lighten( $tertiaryColor, 10% ) }
 	color: darken( $tertiaryColor, 20% )
 }
+
+
+// =====================
+// STYLEGUIDE STYLING --
+// =====================
+section, article {
+	background: #ffffff;
+}
+.key {
+	font-family: $bodyStack;
+	font-size: 0.6em;
+	margin-top: 1em;
+	text-transform: uppercase;	
+}
+h6.key {
+	@extend .key;
+	font-size: 0.8em;
+	border-bottom: 1px solid darken( $tertiaryColor, 5% );
+}
+p.key {
+	margin-bottom: 0;
+}
+.typography {
+	h1, h2, h3, h4, h5, h6 { margin: 0 0.5em; }
+	h6.key { margin: 1em 0 0.2em 0;  }
+	p { margin-top: 0; margin-left: 0.6em; }
+	p.key { margin-top: 1em; }
+}
+

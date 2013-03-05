@@ -10,6 +10,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">  
 
+				<!-- Typekit Credentials -->
+        <script type="text/javascript" src="//use.typekit.net/jzh3aid.js"></script>
+				<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -32,19 +36,20 @@
 					</div>
 					
 					<div class="one-third middle">
-						<h4>Typography</h4>
+						<h6 class="key">Typefaces</h6>
 						<dl>
-							<dt>Headlines</dt>
-								<dd class="header-text">Idlewild ABCD</d>
-							<dt>Body</dt>
-								<dd>FF Enzo AaBbCcDdEeFf</dd>
-							<dt class="body-text">Small Headlines</dt>
+							<dt class="key">Headlines</dt>
+								<dd class="header-text">Idlewild ABCD<br>
+								<span class="key">Presicav used via @font-face until Idlewild is avail for embedding.</span></dt>
+							<dt class="key">Body</dt>
+								<dd class="body-text">FF Enzo AaBbCcDdEeFf</dd>
+							<dt class="key">Small Headlines</dt>
 								<dd class="small-header-text">FF Enzo AaBbCcDdEeFf</dd>
 						</dl>
 					</div>
 
 					<div class="one-third last">
-						<h4>Colors</h4>
+						<h6 class="key">Colors</h6>
 						<ul class="container color-container">
 							<li class="color-block primary dark1"></li>
 							<li class="color-block primary dark2"></li>
@@ -68,43 +73,67 @@
 
 
 			<div class="container">
+				<section class="navigation">
+					<h6 class="key">Navigation</h6>
+					<p class="key">Button Styles</p>
+					<a class="button primary" href="#">Primary Button Example</a>
+					<a class="button secondary" href="#">Secondary Button</a>
+					<a class="button" href="#">Default Button</a>
+				</section>
+
+			</div>
+
+			<div class="container">
 				
-				<section class="article-example">
-					<h1 class="entry-title">Main Heading (H1)</h1>
+				<article class="article-example">
+					<h6 class="key">Article Example</h6>
+					<h1 class="entry-title">Be Water, My Friend</h1>
 					<p class="deck">This is the Deck, or Introduction to the article. It helps readers to join the article with less of a jolt than the regular text. It can also quickly let the reader know what they’re getting into, without the time commitment of scanning the entire article.</p>
 
+					<h2 class="entry-title">Water can flow</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat asperiores impedit atque id consequatur nostrum rem tempore aut beatae esse veniam natus laborum enim mollitia unde inventore reiciendis ullam iste! Minus molestiae suscipit maiores consequuntur voluptatum delectus earum asperiores dolor amet quam nobis dignissimos tenetur quod recusandae quaerat aliquid omnis officia saepe aperiam provident illum quos totam possimus error expedita.</p>
 
-					<h2 class="entry-title">Section Heading</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat asperiores impedit atque id consequatur nostrum rem tempore aut beatae esse veniam natus laborum enim mollitia unde inventore reiciendis ullam iste! Minus molestiae suscipit maiores consequuntur voluptatum delectus earum asperiores dolor amet quam nobis dignissimos tenetur quod recusandae quaerat aliquid omnis officia saepe aperiam provident illum quos totam possimus error expedita.</p>
-
-					<h3>An Unordered List</h3>
+					<h3>Or it can crash</h3>
 					<ul>
 						<li>Apple Macintosh OSX</li>
 						<li>Microsoft Windows 8</li>
 						<li>Ubuntu 12</li>
 					</ul>
 
-					<h5>Someone Important Said:</h5>
+					<h5>Bruce once said:</h5>
 					<blockquote>
-						The thing that’s so wonderful about using beautiful, appropriate tools is that they become an extension of you, your body, you fingertips, and your mind. They get out of the way and let you directly interact with the problem you are solving. Everyone’s tried to remove a screw without a screwdriver; a task quickly becomes impossible that otherwise would be trivial.
+						Empty your mind, be formless, shapeless, like water. Now you put water into a cup, it becomes the cup, you put water into a bottle, it becomes the bottle, you put it in a teapot, it becomes the teapot. Now water can flow or it can crash. Be water, my friend.
 					</blockquote>
-				</section>
+				</article>
 
-				
-				<section class="buttons">
-					<a class="button primary" href="#">Primary Button Example</a>
-					<a class="button secondary" href="#">Secondary Button</a>
-					<a class="button" href="#">Default Button</a>
+				<article class="typography">
+					<h6 class="key">Typography</h6>
+					<p class="key">H1 Header</p>
+					<h1>Main Heading</h1>
+					<p class="key">H2 Header</p>
+					<h2>Sub-Heading</h2>
+					<p class="key">H3 Header</p>
+					<h3>Section Heading</h3>
+					<p class="key">H5 Header</p>
+					<h5>Aside Heading</h5>
+					<p class="key">H6 Header</p>
+					<h6>Small Heading</h6>
+					<p class="key">Body Copy</p>
+					<p>The base type structure on each page.</p>
+					<p class="key">Deck Copy</p>
+					<p class="deck">Intial run-in of an article&mdash;think magazine.</p>
+				</article>
 
-					<hr>
+			</div>
 
+			<div class="container">
+
+				<section class="interactive">
 					<form action="">
 						<label for="text1">Label</label>
-						<input type="text" id="text1">
+						<input type="text" id="text1" placeholder="Placeholder">
 					</form>
 				</section>
-
 
 			</div>
 

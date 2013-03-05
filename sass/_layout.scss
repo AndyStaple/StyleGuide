@@ -8,8 +8,8 @@ $tertiaryColor: #e1e1e1;
 // =====================
 // TYPOGRAPHY ----------
 // =====================
-$bodyStack: "Enzo OT", $lucida-grande;
-$displayStack: Idlewild, sans-serif;
+$bodyStack: "ff-enzo-web-1","ff-enzo-web-2", $lucida-grande;
+$displayStack: "presicav-1","presicav-2", sans-serif; // Idlewild to be re-added as it becomes avail
 $font-size: 1em;
 $unit: em;
 $line-height: $font-size * 1.6;
@@ -24,15 +24,18 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.6em;
 	margin-top: 1.33em;
 	margin-bottom: 0.2em;
+	text-transform: uppercase;
 }
-h1 { font-size: 1.8em; margin-top: 0.5em;}
-h2 { font-size: 1.2em; }
-h3 { font-size: 1.0em; }
-h4 { font-size: 1.0em; }
+h1 { font-size: 1.4em; color: darken( $primaryColor, 5% ); margin-top: 0.2em; letter-spacing: .1em; }
+h2 { font-size: 1.2em; color: lighten( $secondaryColor, 10% ); letter-spacing: .1em; }
+h3 { font-size: 1.0em; letter-spacing: .1em; }
+h4 { font-size: 0.8em; letter-spacing: .1em; }
 h5 { font-size: 1.0em; font-family: $bodyStack; text-transform: uppercase; letter-spacing: 0.18em;} 
 h6 { font-size: 0.9em; font-family: $bodyStack; text-transform: uppercase; letter-spacing: 0.18em;} 
 .header-text {
 	font-family: $displayStack;
+	text-transform: uppercase;
+	letter-spacing: .18em;
 }
 .body-text {
 	font-family: $bodyStack;
@@ -95,9 +98,13 @@ blockquote {
 			} 
 		}
 	}
+	.navigation {
+		@include span-columns(6);
+		@include pad(1.0em);
+	}
 	.article-example {
 		@include span-columns(6);
-		@include pad(1.5em);
+		@include pad(1.0em);
 	}
 	.buttons {
 		@include span-columns(6);
@@ -143,11 +150,19 @@ blockquote {
 			} 
 		}
 	}
+	.navigation {
+		@include span-columns(6);
+		@include pad(1.0em);
+	}
 	.article-example {
 		@include span-columns(6);
 		@include pad(1.5em);
 	}
-	.buttons {
+	.typography {
+		@include span-columns(4);
+		@include pad(1.5em);
+	}
+	.interactive {
 		@include span-columns(4);
 		@include pad(1em);
 		text-align: center;
@@ -188,9 +203,17 @@ blockquote {
 			} 
 		}
 	}
+	.navigation {
+		@include span-columns(8);
+		@include pad(1.0em);
+	}
 	.article-example {
-		@include span-columns(7);
+		@include span-columns(8);
 		@include pad(1.5em);
+	}
+	.typography {
+		@include span-columns(7);
+ 		@include pad(1.5em);
 	}
 	.buttons {
 		@include span-columns(4);
@@ -200,15 +223,4 @@ blockquote {
 			text-align: left;
 		}
 	}
-}
-
-ul.color-container {
-	@include span-columns(8);
-	@include pad(1em); 
-}
-li.color-block {
-  @include span-columns(4);
-  @include omega(3n);
-  @include pad(1em);
-  margin-right: 0;
 }
