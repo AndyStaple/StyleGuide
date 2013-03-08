@@ -12,17 +12,19 @@ body {
 	background: #f1f1f1;
 	color: lighten( $secondaryColor, 20% );
 	line-height: $line-height;
+	text-rendering: optimizeLegibility;
 }
-img { border: 0; max-width: 100%; }
-.colors div {
+img { 
+	border: 0; max-width: 100%; 
 }
-
-.container-full {
+.masthead.container-full {
 	max-width: 100%;
 	background: $secondaryColor;
 	h1 { margin: 0; }
 	@include pad();
 	color: $primaryColor;
+	h4 { color: $tertiaryColor; margin-top: 0.25em; }
+	h6 { margin-top: 0.25em; font-size: 0.8em }
 }
 
 // --------------------------------
@@ -166,5 +168,11 @@ p.key {
 	h6.key { margin: 1em 0 0.2em 0;  }
 	p { margin-top: 0; margin-left: 0.6em; }
 	p.key { margin-top: 1em; }
+}
+.imagery ul {
+	padding-left: 1em;
+	li {
+		font-size: 0.9em;
+	}
 }
 

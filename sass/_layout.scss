@@ -58,47 +58,47 @@ blockquote {
 // =====================
 // THE GRID ------------
 // =====================
-.container {
+.container, .table-outer-container {
 	@include outer-container;
 	@include pad(1em);
 }
 
 // MOBILE GRID
 @include media($mobile) {
-	.table-outer-container {
-		@include outer-container;
-		@include pad(1em);
-		.table-inner-container {
+	.table-inner-container {
+		@include span-columns(6);
+		.one-third {
 			@include span-columns(6);
-			.one-third {
+			@include pad(1em);
+			text-align: left;
+			&.middle {
 				@include span-columns(6);
-				@include pad(1em);
-				text-align: left;
-				&.middle {
-					@include span-columns(6);
-				}
-				&.last {
-					@include omega();
-					@include reset-display;
-				}
 			}
-			ul.color-container {
-				margin-top: 0;
-				margin-bottom: 0;
-				@include span-columns(6 of 6);
-				@include pad(0); 
-				li.color-block {
-				  @include span-columns(6);
-				  @include omega(1n);
-					@include pad();
-				  height: 4em;
-				  text-align: center;
-				  margin-right: 0;
-				}
-			} 
+			&.last {
+				@include omega();
+				@include reset-display;
+			}
 		}
+		ul.color-container {
+			margin-top: 0;
+			margin-bottom: 0;
+			@include span-columns(6 of 6);
+			@include pad(0); 
+			li.color-block {
+			  @include span-columns(6);
+			  @include omega(1n);
+				@include pad();
+			  height: 4em;
+			  text-align: center;
+			  margin-right: 0;
+			}
+		} 
 	}
 	.navigation {
+		@include span-columns(6);
+		@include pad(1.0em);
+	}
+	.imagery {
 		@include span-columns(6);
 		@include pad(1.0em);
 	}
@@ -115,55 +115,55 @@ blockquote {
 
 // TABLET GRID
 @include media($tablet) {
-	.table-outer-container {
-		@include outer-container;
-		@include pad(1em);
-		.table-inner-container {
-			@include span-columns(10);
-			.one-third {
-				@include span-columns(4);
-				@include pad(1em);
-				text-align: left;
-				&.middle {
-					@include span-columns(6);
-					@include omega;
-				}
-				&.last {
-					@include span-columns(10);
-					@include reset-display;
-					text-align: center;
-				}
+	.table-inner-container {
+		@include span-columns(10);
+		.one-third {
+			@include span-columns(4);
+			@include pad(1em);
+			text-align: left;
+			&.middle {
+				@include span-columns(6);
+				@include omega;
 			}
-			ul.color-container {
-				margin-top: 0;
-				margin-bottom: 0;
-				@include span-columns(10 of 10);
-				@include pad(0); 
-				li.color-block {
-				  @include span-columns(2);
-				  @include omega(5n);
-					@include pad();
-				  height: 8em;
-				  text-align: center;
-				  margin-right: 0;
-				}
-			} 
+			&.last {
+				@include span-columns(10);
+				@include reset-display;
+				text-align: center;
+			}
 		}
+		ul.color-container {
+			margin-top: 0;
+			margin-bottom: 0;
+			@include span-columns(10 of 10);
+			@include pad(0); 
+			li.color-block {
+			  @include span-columns(2);
+			  @include omega(5n);
+				@include pad();
+			  height: 8em;
+			  text-align: center;
+			  margin-right: 0;
+			}
+		} 
 	}
 	.navigation {
-		@include span-columns(6);
+		@include span-columns(5);
+		@include pad(1.0em);
+	}
+	.imagery {
+		@include span-columns(5);
 		@include pad(1.0em);
 	}
 	.article-example {
-		@include span-columns(6);
+		@include span-columns(5);
 		@include pad(1.5em);
 	}
 	.typography {
-		@include span-columns(4);
+		@include span-columns(5);
 		@include pad(1.5em);
 	}
 	.interactive {
-		@include span-columns(4);
+		@include span-columns(5);
 		@include pad(1em);
 		text-align: center;
 	}
@@ -171,41 +171,47 @@ blockquote {
 
 // DESKTOP GRID
 @include media($desktop) {
-	.table-outer-container {
-		@include outer-container;
-		@include pad(1em);
-		.table-inner-container {
-			@include span-columns(15);
-			.one-third {
-				@include span-columns(4);
-				@include pad(1em);
-				text-align: left;
-				&.middle {
-					@include span-columns(7);
-				}
-				&.last {
-					@include reset-display;
-				}
+	.table-inner-container {
+		@include span-columns(15);
+		.one-third {
+			@include span-columns(4);
+			@include pad(1em);
+			text-align: left;
+			&.middle {
+				@include span-columns(7);
 			}
-			ul.color-container {
-				margin-top: 0;
-				margin-bottom: 0;
-				@include span-columns(5 of 5);
-				@include pad(0); 
-				li.color-block {
-				  @include span-columns(3);
-				  @include omega(5n);
-				  @include pad();
-				  height: 8em;
-				  text-align: center;
-				  margin-right: 0;
-				}
-			} 
+			&.last {
+				@include reset-display;
+			}
 		}
+		ul.color-container {
+			margin-top: 0;
+			margin-bottom: 0;
+			@include span-columns(5 of 5);
+			@include pad(0); 
+			li.color-block {
+			  @include span-columns(3);
+			  @include omega(5n);
+			  @include pad();
+			  height: 8em;
+			  text-align: center;
+			  margin-right: 0;
+			}
+		} 
 	}
 	.navigation {
 		@include span-columns(8);
 		@include pad(1.0em);
+	}
+	.imagery {
+		@include span-columns(7);
+		@include pad(1.0em);
+		.imagery-list {
+			@include span-columns(3 of 7);
+		}
+		.imagery-examples {
+			@include span-columns(4 of 7);
+		}
 	}
 	.article-example {
 		@include span-columns(8);
