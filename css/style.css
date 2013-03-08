@@ -566,6 +566,12 @@ body {
   line-height: 1.6em;
   text-rendering: optimizeLegibility; }
 
+a {
+  color: #d16144; }
+
+a:hover, a:active {
+  color: #8c3823; }
+
 img {
   border: 0;
   max-width: 100%; }
@@ -805,6 +811,13 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
   .one-third dd {
     margin-left: 1em;
     margin-bottom: 1em; }
+
+.navigation ul li {
+  display: inline-block; }
+  .navigation ul li a {
+    text-decoration: none;
+    font-family: "presicav-1", "presicav-2", sans-serif;
+    text-transform: uppercase; }
 
 .deck {
   font-size: 1.2em;

@@ -14,6 +14,12 @@ body {
 	line-height: $line-height;
 	text-rendering: optimizeLegibility;
 }
+a {
+	color: $primaryColor;
+}
+a:hover, a:active {
+	color: darken( $primaryColor, 20% );
+}
 img { 
 	border: 0; max-width: 100%; 
 }
@@ -97,6 +103,19 @@ a.button.alert {
 	dd {
 		margin-left: 1em;
 		margin-bottom: 1em;
+	}
+}
+
+.navigation {
+	ul {
+		li {
+			display: inline-block;
+			a {
+				text-decoration: none;
+				font-family: $displayStack;
+				text-transform: uppercase;
+			}
+		}
 	}
 }
 
